@@ -26,3 +26,10 @@ scripts/*.bak
 
 # Distribution
 *.exe
+
+# Noise / Nested Repos
+archive/
+tmp/
+.gradle/
+.next/
+node_modules/
