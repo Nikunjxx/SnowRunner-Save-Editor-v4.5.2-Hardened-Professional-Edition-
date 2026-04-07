@@ -1,0 +1,59 @@
+﻿python : Traceback (most recent call last):
+At line:1 char:1
++ python tests/verify_v111.py > 
+verify_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          : NotSpecified: (Tra 
+   ceback (most recent call last)::String) [],   
+  RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "E:\Snow Runner New 
+Tool\tests\verify_v111.py", line 133, in <module>
+    run_verification()
+  File "E:\Snow Runner New 
+Tool\tests\verify_v111.py", line 89, in 
+run_verification
+    with manager.transaction(whitelist=["Complete
+Save.cfg"]) as tx_id:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+  File "C:\Users\gupta\AppData\Local\Programs\Pyt
+hon\Python312\Lib\contextlib.py", line 137, in 
+__enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "E:\Snow Runner New 
+Tool\integrity_engine\manager.py", line 97, in 
+transaction
+    
+self.backups.trigger_backup(self.target_folder, 
+whitelist)
+  File "E:\Snow Runner New 
+Tool\integrity_engine\backups.py", line 44, in 
+trigger_backup
+    self._create_delta_backup(source_dir, 
+modified_files)
+  File "E:\Snow Runner New 
+Tool\integrity_engine\backups.py", line 77, in 
+_create_delta_backup
+    abs_f = f if os.isabs(f) else 
+os.path.join(source_dir, f)
+                 ^^^^^^^^
+AttributeError: module 'os' has no attribute 
+'isabs'
+=== SNOWRUNNER V111.00 VERIFICATION SUITE ===
+
+[T1] Testing Folder Loader Heuristics...
+>>> PASS: Folder Heuristics Verified.
+
+[T2] Testing Transaction Logic (Success Path)...
+[Backup] Full root backup created: full_root_backup.zip
+Executing Mutation in TX: 6e0e4361-a669-48fa-8771-b3eedafde228
+>>> PASS: Transaction Committed Successfully.
+
+[T3] Testing Transaction Logic (Rollback Path)...
+
+!!! VERIFICATION FAILED !!!
+module 'os' has no attribute 'isabs'

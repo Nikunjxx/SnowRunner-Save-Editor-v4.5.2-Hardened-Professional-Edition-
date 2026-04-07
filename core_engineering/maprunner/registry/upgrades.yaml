@@ -1,0 +1,33 @@
+michigan:
+  black_river:
+  - id: upgrade_us_scout_chevrolet_ck1500_suspension_high
+    name: BDS Suspension (Raised)
+    vehicle: Chevrolet CK1500
+    type: suspension
+  - id: upgrade_us_scout_chevrolet_ck1500_engine_0
+    name: A15V-TX Engine
+    vehicle: Chevrolet CK1500
+    type: engine
+  - id: upgrade_us_truck_fleetstar_f2070a_suspension_high
+    name: F-2070A (Raised)
+    vehicle: Fleetstar F2070A
+    type: suspension
+  - id: upgrade_us_truck_gmc_mh9500_diff_lock
+    name: Differential Lock
+    vehicle: GMC MH9500
+    type: diff_lock
+  smithville_dam:
+  - id: upgrade_us_truck_western_star_4964_diff_lock
+    name: Differential Lock (4964)
+    vehicle: Western Star 4964
+    type: diff_lock
+  - id: upgrade_us_truck_white_western_star_4964_suspension_high
+    name: 4964 (Raised)
+    vehicle: Western Star 4964
+    type: suspension
+alaska:
+  north_port:
+  - id: upgrade_us_truck_hummer_h2_suspension_high
+    name: H2 (Raised)
+    vehicle: Hummer H2
+    type: suspension

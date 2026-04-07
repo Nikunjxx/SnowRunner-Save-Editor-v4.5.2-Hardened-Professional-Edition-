@@ -1,0 +1,38 @@
+{
+  "deltas": [
+    {
+      "name": "delta_20260405_141711.zip",
+      "timestamp": "20260405_141711",
+      "files": [
+        "CompleteSave.cfg"
+      ],
+      "hashes": {
+        "CompleteSave.cfg": "8583db9ce8d6c8df1da16c0c567a226602c9aded3f47619b3d6bd89ae892de80"
+      }
+    },
+    {
+      "name": "delta_20260405_141744.zip",
+      "timestamp": "20260405_141744",
+      "files": [
+        "CompleteSave.cfg"
+      ],
+      "hashes": {
+        "CompleteSave.cfg": "8583db9ce8d6c8df1da16c0c567a226602c9aded3f47619b3d6bd89ae892de80"
+      }
+    },
+    {
+      "name": "delta_20260405_161510.zip",
+      "timestamp": "20260405_161510",
+      "files": [
+        "CompleteSave.cfg"
+      ],
+      "hashes": {
+        "CompleteSave.cfg": "8583db9ce8d6c8df1da16c0c567a226602c9aded3f47619b3d6bd89ae892de80"
+      }
+    }
+  ],
+  "full": {
+    "name": "full_root_backup.zip",
+    "timestamp": "20260405_161510"
+  }
+}

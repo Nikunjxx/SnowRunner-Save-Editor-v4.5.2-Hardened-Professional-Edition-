@@ -1,0 +1,158 @@
+{
+    "report": [
+        {
+            "file": "1_fog_level_us_01_01.cfg",
+            "status": "VERIFIED",
+            "hash": "7f41e271bba810fd8021b9d4e72439ca7efadfedff41c853e838e41720dc0171"
+        },
+        {
+            "file": "1_sts_level_us_01_01.cfg",
+            "status": "VERIFIED",
+            "hash": "a4c012991a6de5ce068ac941e63b966c160d9ec48e99f81824d3ab1a8fcf6bab"
+        },
+        {
+            "file": "1_sts_mudmaps_level_us_01_01.cfg",
+            "status": "VERIFIED",
+            "hash": "0bb709232077f04c5c751ba5cc904e0bd1d370198471b7724780375a0130e50f"
+        },
+        {
+            "file": "CommonSslSave.cfg",
+            "status": "VERIFIED",
+            "hash": "b810cc1f47f6951a156d5e5456e24943be70562528a6b17e3ef9cd606214e999"
+        },
+        {
+            "file": "CompleteSave.cfg",
+            "status": "VERIFIED",
+            "hash": "deac2ea73555670dd1dec5ec7ad829717231cf11aba215728894dc698c23f309"
+        },
+        {
+            "file": "CompleteSave1.cfg",
+            "status": "VERIFIED",
+            "hash": "fbdf881331a55d3d557ee81dd094c8ca009f0555307b0b4bf15a892020499a7c"
+        },
+        {
+            "file": "fog_level_ru_02_02.cfg",
+            "status": "VERIFIED",
+            "hash": "7356a40b00ca48b24b922bb2528cebfeb18d26b6baac243d191495a6e8b950a9"
+        },
+        {
+            "file": "fog_level_ru_03_01.cfg",
+            "status": "VERIFIED",
+            "hash": "c33a6b68a2898d287677daebf33184909fbc3fec9b20a1fccd3369375e2c99db"
+        },
+        {
+            "file": "fog_level_ru_04_01.cfg",
+            "status": "VERIFIED",
+            "hash": "048dd6aebb9181a79325e8e0a56280bae9348b8c5096ae4a70f9c4fa5a59ca18"
+        },
+        {
+            "file": "fog_level_us_01_01.cfg",
+            "status": "VERIFIED",
+            "hash": "d1ba3a2e569b84834abfac141319dfde9cd0d08c6edfe15b20cc92aa13c6aa14"
+        },
+        {
+            "file": "fog_level_us_01_02.cfg",
+            "status": "VERIFIED",
+            "hash": "2caa2ed873c4cda70a55edc925b3cab70f6d91bdf3a46c5aa293fbf61dc11deb"
+        },
+        {
+            "file": "fog_level_us_01_03.cfg",
+            "status": "VERIFIED",
+            "hash": "d5cfa595249c85550380ca6a1641b22d3e199b037f01a239528559c1752ee356"
+        },
+        {
+            "file": "fog_level_us_01_04_new.cfg",
+            "status": "VERIFIED",
+            "hash": "a1a2f8ad2b7a79219f63dcce4a9ae9a05648ca3d506b898f291b92dd94735264"
+        },
+        {
+            "file": "fog_level_us_02_01.cfg",
+            "status": "VERIFIED",
+            "hash": "dd5b9b71c52183d5f4bad76d04d9f71fc9e70c11de0ba4414015e1dbf6e98295"
+        },
+        {
+            "file": "fog_level_us_02_02_new.cfg",
+            "status": "VERIFIED",
+            "hash": "543903be4331324b135d7eee9aa858b484ba7a372a3ad2ddfe2f37ef9ef212de"
+        },
+        {
+            "file": "fog_level_us_02_03_new.cfg",
+            "status": "VERIFIED",
+            "hash": "f8f61b859f5a3e9e5175c84875320cdb688bef5d37d866989161a98748dc8e49"
+        },
+        {
+            "file": "fog_level_us_03_01.cfg",
+            "status": "VERIFIED",
+            "hash": "def32b26a35b5fb6d715012ffa4fcad9b6d3951dd6d54b89dc218f86ba3644ed"
+        },
+        {
+            "file": "fog_level_us_04_01.cfg",
+            "status": "VERIFIED",
+            "hash": "42f3c2b949ccc91dc7cc0b3c4131fd8ec51a2e5268354a3110803294377482c9"
+        },
+        {
+            "file": "GameVersionSave.cfg",
+            "status": "VERIFIED",
+            "hash": "7663aa1dfcccad95503fc83c0385668140733d468016f63468e01b81aeb74c67"
+        },
+        {
+            "file": "sts_level_us_01_01.cfg",
+            "status": "VERIFIED",
+            "hash": "44ffdd5a8172739be55c4c235f4f25f8190b7f4eb5b175c71afff249291fb58b"
+        },
+        {
+            "file": "sts_level_us_01_02.cfg",
+            "status": "VERIFIED",
+            "hash": "2da4dde6edfb8f80e1d89600380ae384b74e5521b6a66bbf32ebd992eda10787"
+        },
+        {
+            "file": "sts_level_us_01_03.cfg",
+            "status": "VERIFIED",
+            "hash": "693f71a7916f8ef924e7f3e2214c51cf0513fd37ab511586472c87a4431c9889"
+        },
+        {
+            "file": "sts_level_us_01_04_new.cfg",
+            "status": "VERIFIED",
+            "hash": "ad822fa4f88bacbf84c45c605f748aeb3376ef0784e72ae29fa4d117fea54b58"
+        },
+        {
+            "file": "sts_level_us_02_01.cfg",
+            "status": "VERIFIED",
+            "hash": "c23c5da2949f2f32fdcb70ff20e3e984705e4f0d38e2075a9593b9ee347b49d8"
+        },
+        {
+            "file": "sts_level_us_02_02_new.cfg",
+            "status": "VERIFIED",
+            "hash": "6b2cc70831484709440d7ac4f3d9b1b94fc34f0a5320904f410a019b9afd9ec2"
+        },
+        {
+            "file": "sts_level_us_02_03_new.cfg",
+            "status": "VERIFIED",
+            "hash": "877f9368514bc8b6f3d0210910d1a4f0385bcdbf5f002c1655f16c3e0ea3706e"
+        },
+        {
+            "file": "user_profile.cfg",
+            "status": "VERIFIED",
+            "hash": "afbc02e39829d99c2524fd31195a3cd1a1bd7ad00e8aab98f37aeea05796508c"
+        },
+        {
+            "file": "user_settings.cfg",
+            "status": "VERIFIED",
+            "hash": "92e9fdd420c4849962c58f19119582f515fd60ea0136defa9ef524f879fd5dad"
+        },
+        {
+            "file": "user_social_data.cfg",
+            "status": "VERIFIED",
+            "hash": "cc9bd5878d0742adfd916f8fce32eda5841829ebd485da8f453caac2b5edbedb"
+        },
+        {
+            "file": "video.cfg",
+            "status": "VERIFIED",
+            "hash": "1f7ee4cc15f6bc3d2b8700d33316ade997afeb11cc5eb301f5328b45fe9a0874"
+        }
+    ],
+    "stats": {
+        "total": 30,
+        "verified": 30
+    }
+}

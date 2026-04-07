@@ -1,0 +1,52 @@
+# [PH3-MAP-001] Field Mapping Registry
+# Defines how UI/State interacts with raw save data and MapRunner context.
+
+fields:
+  # Player Stats
+  # -------------------------------------------------------------------
+  player.money:
+    path: derived.player.money
+    type: integer
+    editable: true
+    label: "Available Funds"
+    constraints:
+      min: 0
+      max: 999999999
+
+  player.rank:
+    path: derived.player.rank
+    type: integer
+    editable: false # Locked per game rules (derived from XP)
+    label: "Player Rank"
+
+  player.experience:
+    path: derived.player.experience
+    type: integer
+    editable: true
+    label: "Experience Points"
+    constraints:
+      min: 0
+
+  # Vehicles (Warehouse)
+  # -------------------------------------------------------------------
+  trucks:
+    type: collection
+    identity: truck_id
+    source: CompleteSave.SslValue.persistentProfileData.trucksInWarehouse
+    label: "Trucks in Warehouse"
+    resolver: "maprunner.get_truck" # Dynamic binding to Layer 1
+
+  trucks.*.isUnlocked:
+    type: boolean
+    editable: true
+    label: "Unlocked"
+    rules:
+      - CONDITIONAL_LOCK
+
+  # Upgrades
+  # -------------------------------------------------------------------
+  upgrades:
+    type: collection
+    identity: upgrade_id
+    label: "Supported Upgrades"
+    resolver: "maprunner.get_upgrades" # Fully dynamic from MapRunner

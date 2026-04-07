@@ -1,0 +1,65 @@
+{
+    "total_mutations": 9,
+    "successful_mutations": 1,
+    "failed_mutations": 6,
+    "blocked_mutations": 2,
+    "total_bytes_processed": 1122,
+    "total_duration_ms": 64,
+    "last_reset": 1775135124.2539399,
+    "history": [
+        {
+            "timestamp": 1775135124.2636418,
+            "feature": "unknown",
+            "status": "failed",
+            "duration_ms": 0
+        },
+        {
+            "timestamp": 1775135140.0681758,
+            "feature": "unknown",
+            "status": "failed",
+            "duration_ms": 0
+        },
+        {
+            "timestamp": 1775135155.5598059,
+            "feature": "unknown",
+            "status": "blocked",
+            "duration_ms": 6
+        },
+        {
+            "timestamp": 1775135172.6811328,
+            "feature": "unknown",
+            "status": "blocked",
+            "duration_ms": 6
+        },
+        {
+            "timestamp": 1775135188.568524,
+            "feature": "unknown",
+            "status": "failed",
+            "duration_ms": 0
+        },
+        {
+            "timestamp": 1775135188.5710483,
+            "feature": "unknown",
+            "status": "failed",
+            "duration_ms": 2
+        },
+        {
+            "timestamp": 1775135188.572049,
+            "feature": "unknown",
+            "status": "failed",
+            "duration_ms": 0
+        },
+        {
+            "timestamp": 1775135188.5750496,
+            "feature": "SCENARIO_EXPLORER_MODE",
+            "status": "failed",
+            "duration_ms": 0
+        },
+        {
+            "timestamp": 1775135188.5750496,
+            "feature": "AUDIT_TEST",
+            "status": "SUCCESS",
+            "duration_ms": 50
+        }
+    ]
+}

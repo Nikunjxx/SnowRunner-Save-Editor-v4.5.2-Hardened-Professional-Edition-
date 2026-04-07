@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# SnowRunner App Specific
+logs/
+release/
+build/
+dist/
+*.log
+*.bak
+*.spec
+
+# Verification Data
+core_engineering/verification/golden/
+core_engineering/verification/actual/
+scripts/test_save.cfg
+scripts/*.bak
+
+# Distribution
+*.exe

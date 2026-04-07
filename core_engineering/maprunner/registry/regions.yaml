@@ -1,0 +1,77 @@
+US_01:
+  name: Michigan
+  type: base
+US_02:
+  name: Alaska
+  type: base
+RU_02:
+  name: Taymyr
+  type: base
+RU_03:
+  name: Kola Peninsula
+  type: dlc
+  season: 1
+US_04:
+  name: Yukon
+  type: dlc
+  season: 2
+US_03:
+  name: Wisconsin
+  type: dlc
+  season: 3
+RU_04:
+  name: Amur
+  type: dlc
+  season: 4
+RU_05:
+  name: Don
+  type: dlc
+  season: 5
+US_06:
+  name: Maine
+  type: dlc
+  season: 6
+US_07:
+  name: Tennessee
+  type: dlc
+  season: 7
+RU_08:
+  name: Glades
+  type: dlc
+  season: 8
+US_09:
+  name: Ontario
+  type: dlc
+  season: 9
+US_10:
+  name: British Columbia
+  type: dlc
+  season: 10
+US_11:
+  name: Scandinavia
+  type: dlc
+  season: 11
+US_12:
+  name: North Carolina
+  type: dlc
+  season: 12
+RU_13:
+  name: Almaty
+  type: dlc
+  season: 13
+US_14:
+  name: Austria
+  type: dlc
+  season: 14
+US_15:
+  name: Quebec
+  type: dlc
+  season: 15
+US_16:
+  name: Washington
+  type: dlc
+  season: 16
+RU_17:
+  name: Zurdania
+  type: dlc
+  season: 17

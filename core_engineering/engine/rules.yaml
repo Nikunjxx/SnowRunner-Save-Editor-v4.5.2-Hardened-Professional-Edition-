@@ -1,0 +1,97 @@
+# [PH2-RUL-001] SnowRunner Save Engine — Hardened Rule System (v2.4)
+
+progression:
+  # Strict Progression (Successor State Enforced)
+  player.money: SESSION_SCOPED
+  player.rank: SESSION_SCOPED
+  player.experience: SESSION_SCOPED
+  CompleteSave.SslValue.persistentProfileData.money: SESSION_SCOPED
+  CompleteSave.SslValue.persistentProfileData.rank: SESSION_SCOPED
+  CompleteSave.SslValue.persistentProfileData.experience: SESSION_SCOPED
+
+  # Type-Safe Variation (Cross-Slot Tolerance)
+  gameStats.distanceTraveled: TYPE_SAFE_VARIATION
+  gameStats.timePlayed: TYPE_SAFE_VARIATION
+  derived.player.*: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.gameStat.*: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.objectiveStates.*.spentTime: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.objectiveStates.*.isTimerStarted: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.garagesData.*.isDiscovered: BOOLEAN_FLIP_TRUE
+  CompleteSave.SslValue.watchPointsData.data.*.*: REVERSIBLE_BOOLEAN
+  CompleteSave.SslValue.upgradesGiverData.*.*: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.trackedObjective: TYPE_SAFE_VARIATION
+  
+  # Granular Warehouse Rules
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.fuel: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.fuelBurn: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.repairs: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.wheelRepairs: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.engine.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.gearbox.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.winchUpgrade.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.suspension.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.rims.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.tires.name: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.wheelsType: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.wheelsScale: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*.isUnlocked: CONDITIONAL_LOCK
+
+  # Set-Based (Growth)
+  progression.unlockedTrucks: SET_GROWTH
+  progression.discoveredMaps: SET_GROWTH
+  discoveredTrucks.*: SET_GROWTH
+  discoveredUpgrades.*: SET_GROWTH
+  CompleteSave.SslValue.discoveredTrucks.*: SET_GROWTH
+  CompleteSave.SslValue.discoveredUpgrades.*: SET_GROWTH
+  CompleteSave.SslValue.persistentProfileData.unlockedItems.*: SET_GROWTH
+  CompleteSave.SslValue.upgradesGiverData.*: MONOTONIC_INCREASE
+
+  # Structural Variation (Existence in Dynamic Containers)
+  CompleteSave.SslValue.persistentProfileData.trucksInWarehouse.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.addons.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.unlockedItemNames.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.ownedTrucks.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.newTrucks.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.knownRegions.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.distance.*: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.objectiveStates.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.discoveredObjectives.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.cargoLoadingCounts.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.levelGarageStatuses.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.garagesData.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.discoveredUpgrades.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.discoveredTrucks.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.isFirstGarageDiscovered: TYPE_SAFE_VARIATION
+  CompleteSave.SslValue.gameStatByRegion.*: SESSION_SCOPED
+  CompleteSave.SslValue.finishedObjs.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.saveId: SESSION_SCOPED
+  CompleteSave.SslValue.lastPhantomMode: SESSION_SCOPED
+  CompleteSave.SslValue.lastLoadedLevel: SESSION_SCOPED
+  CompleteSave.SslValue.lastLevelState: SESSION_SCOPED
+  CompleteSave.SslValue.gameTime: SESSION_SCOPED
+  hash: SESSION_SCOPED
+  CompleteSave.SslValue.waypoints.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.visitedLevels.*: SET_GROWTH
+  CompleteSave.SslValue.viewedUnactivatedObjectives.*: SET_GROWTH
+  CompleteSave.SslValue.tutorialStates.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.savedCargoNeedToBeRemovedOnRestart.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.modTruckOnLevels.*: STRUCTURAL_PRESENCE
+  CompleteSave.SslValue.persistentProfileData.achievementState.*: STRUCTURAL_PRESENCE
+
+  # State-Based (Forward Only)
+  objectives.*.isCompleted: BOOLEAN_FLIP_TRUE
+  contracts.*.status: CONDITIONAL_STATE
+  CompleteSave.SslValue.tutorialStates.*: REVERSIBLE_BOOLEAN
+  
+  # Positional-Based
+  waypoints.*: POSITIONAL_DELTA
+
+noise:
+  # Pattern-Based Patterns (re.search enabled)
+  - ".*timestamp.*"
+  - ".*lastSaveTime.*"
+  - ".*sessionId.*"
+  - ".*runtime.*"
+  - ".*frame.*"
+  - ".*guid.*"
+  - ".*cfg_version.*" # Structural but volatile
